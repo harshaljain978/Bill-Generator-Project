@@ -41,10 +41,10 @@ function generatePDF() {
 
     // Add bill header
     doc.setFontSize(14);
-    doc.text("Meenakshi Enterprises", 70, 10);
+    doc.text("Enterprises", 70, 10);
     doc.setFontSize(10);
-    doc.text("Phone: +91-9828920482, +91-9783786028", 10, 20);
-    doc.text("Address:  9 Bhram Pole Marg Jada Ganesh Ji Ka Chouk Out Side Chand Pole, Udaipur City, Udaipur-Rajasthan - 313001", 10, 30);
+    doc.text("Phone: +91-9828920481, +91-9783786021", 10, 20);
+    doc.text("Address:  Rajesthan", 10, 30);
     doc.text("Customer Name: " + customerName, 10, 40);
     doc.text("Date: " + billDate, 10, 50);
 
