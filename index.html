@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Generator - Meenakshi Enterprises</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  </head>
+  <body>
+    <div id="billContainer">
+      <h2>Meenakshi Enterprises</h2>
+      <p>Phone: <span id="phone">+91-9828920482, +91-9783786028</span></p>
+      <p>
+        Address:
+        <span id="address"
+          >9 Bhram Pole Marg Jada Ganesh Ji Ka Chouk Out Side Chand Pole,
+          Udaipur City, Udaipur-Rajasthan - 313001</span
+        >
+      </p>
+      <p>Customer Name: <input type="text" id="customerName" /></p>
+      <p>Date: <input type="date" id="date" /></p>
+
+      <div class="button-container">
+        <button onclick="addItem()">Add Item</button>
+      </div>
+
+      <table id="billTable">
+        <thead>
+          <tr>
+            <th>Serial No.</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Per Item Cost</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Total: <span id="total">0</span> INR</h3>
+      <h3>GST (18%): <span id="gst">0</span> INR</h3>
+      <h3>
+        Discount (%):
+        <input
+          type="number"
+          id="discount"
+          value="0"
+          oninput="calculateTotal()"
+        />
+      </h3>
+      <h3>Final Amount: <span id="finalAmount">0</span> INR</h3>
+    </div>
+
+    <button onclick="generatePDF()">Download PDF</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
