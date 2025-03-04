@@ -1,4 +1,4 @@
-### Bill Generator Project Report
+### Bill Generator Project 
 
 Hey there! I’ve built an awesome Bill Generator tool, and I want to walk you through it in a simple way so you can see how cool and useful it is. Imagine you’re running a shop, and you need a quick way to create professional bills for your customers—well, that’s exactly what this does! Let me break it down for you.
 
